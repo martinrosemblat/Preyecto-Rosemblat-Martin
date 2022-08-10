@@ -1,0 +1,57 @@
+
+@media (max-width: 480px){
+
+
+    .quienes,
+    .preguntas,
+    .li-quienes,
+    .li-preguntas{
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+    
+    .necesito{
+        width: 80%;
+    }
+    
+    .productos{
+        padding-left: 15px;
+    }
+    .img-envio{
+        width: 30%;
+        height: 60%;
+        text-align: center;
+    }
+    
+    .titulo-categoria,
+    .categorias{
+        display: none;
+    }
+    
+    .grid-main{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .grid-main > div p{
+        font-size: medium;
+        font-weight: 700;
+        width: 100%;
+    }
+    
+    .grid-main > div{
+        align-items: center;
+    }
+     .porque-elegirnos{
+        font-size: small;
+     }
+    
+    
+    }
+
+    @import url(responsive-1716px.css);
+
+
+
+    
+    

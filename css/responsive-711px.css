@@ -1,0 +1,12 @@
+@media (max-width: 711px){
+
+    .porque-elegirnos{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    .buscador{
+        display: none;
+    }
+}
