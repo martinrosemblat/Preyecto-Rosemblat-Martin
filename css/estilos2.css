@@ -2,7 +2,7 @@
 html,
 body {
     font-size: roboto, arial;
-    background-color: #BDB67F ;
+    background-color: #BDB67F;
     margin: 0px;
     padding: 0px;
 }
@@ -24,15 +24,20 @@ body {
 .navegador {
     display: grid;
     grid-template-areas: "titulo titulo titulo"
-                         "logo menu buscador";
+        "logo menu buscador";
     grid-template-columns: 2fr 6fr 2fr;
     grid-template-rows: auto 80px;
     background-color: #f8f32a;
     background-image: linear-gradient(180deg, #f8f32a 43%, #bdb67f 100%);
     ;
 
-    
-    
+
+
+}
+
+
+* {
+    box-sizing: border-box;
 }
 
 .navegador>div {
@@ -45,7 +50,7 @@ body {
     margin: 0 auto;
 }
 
-h1{
+h1 {
     margin: 10px;
     font-size: medium;
 }
@@ -65,7 +70,7 @@ h1{
     grid-area: titulo;
     align-items: center;
     background-color: #f8f32a;
-background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
+    background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
 
 
     color: rgb(244, 242, 243);
@@ -96,30 +101,30 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
 
 /* CONFIGURACION INTERNA NAVEGADOR */
 
-.ul >li {
-    display:flex;
+.ul>li {
+    display: flex;
 
 }
 
 
-.ul-li a{
+.ul-li a {
     text-decoration: none;
-    font-size:20px;
+    font-size: 20px;
     font-weight: 600;
     color: rgb(13, 19, 33);
     justify-self: center;
     width: 100%;
-    
+
 }
 
 .ul-li {
     list-style: none;
     width: 100%;
-   /*  padding: 0%; */
+    /*  padding: 0%; */
     display: flex;
 }
 
-.ul-li li{
+.ul-li li {
     width: 100%;
     display: inline;
 }
@@ -129,43 +134,61 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
 
 /* GRID SECCION INTERNA */
 
-.grid-main{
+.grid-main {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: minmax(auto, 100%);
     grid-template-areas: "titulo elegirnos elegirnos"
-                         "categorias elegirnos elegirnos"
-                         "categorias img-envio-gratis t-envio-g"
-                         "categorias img-devoluciones t-devolucion"
-                         "categorias img-garantia t-garantia"
-                         "categorias img-seguridad t-seguridad"
-                         "medio-de-pago . ."
-                         "medio-de-pago img-tarjetas img-cripto";
-      
-    
+        "categorias elegirnos elegirnos"
+        "categorias img-envio-gratis t-envio-g"
+        "categorias img-devoluciones t-devolucion"
+        "categorias img-garantia t-garantia"
+        "categorias img-seguridad t-seguridad"
+        "medio-de-pago . ."
+        "medio-de-pago img-tarjetas img-cripto";
+
+
 }
 
-.grid-main div{
+.grid-main-productos {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: minmax(auto, 100%);
+    grid-template-areas: "titulo productos"
+                "categorias productos"
+                "categorias productos"
+                "categorias productos"
+                
+    ;
+}
+
+
+.grid-main div {
     margin: 0%;
     padding: 0%;
     width: 100%;
-    
+
 }
 
 
-.grid-main div > img{
+.grid-main div>img {
     width: 20%;
     justify-self: center;
     margin-left: 35%;
-    
+
 }
 
-.grid-main div > img:hover{
+.grid-main div>img:hover {
     transform: scale(1.1);
-    transition: all 0,5s;
+    transition: all 0, 5s;
 }
 
-.titulo-categoria{
+.productos-area {
+    grid-area: productos;
+}
+
+
+.titulo-categoria {
     grid-area: titulo;
     background-color: #F8F2CB;
     text-align: center;
@@ -176,11 +199,11 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
     border-radius: 0px;
     background: #e0e0e0;
     box-shadow: inset 29px 29px 59px #989898,
-                inset -29px -29px 59px #ffffff;
+        inset -29px -29px 59px #ffffff;
 }
 
 
-.categorias{
+.categorias {
     grid-area: categorias;
     background-color: #BDB67F;
     width: auto;
@@ -190,7 +213,7 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
 
 }
 
-.porque-elegirnos{
+.porque-elegirnos {
     grid-area: elegirnos;
     text-align: center;
     font-size: 50px;
@@ -198,20 +221,22 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
     font: weight 900px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    text-decoration:wavy;
+    text-decoration: wavy;
 }
-.porque-elegirnos p{
+
+.porque-elegirnos p {
     margin-top: 4%;
     margin-bottom: 2%;
 }
-.img-envio-gratis{
+
+.img-envio-gratis {
     grid-area: img-envio-gratis;
     display: flex;
     width: max-content;
     height: max-content;
 }
 
-.texto-envios-gratis{
+.texto-envios-gratis {
     grid-area: t-envio-g;
     display: flex;
     align-items: center;
@@ -219,19 +244,19 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
     font-weight: bold;
     width: max-content;
     height: max-content;
-    
+
 }
 
 
 
-.img-devolucion{
+.img-devolucion {
     grid-area: img-devoluciones;
     display: flex;
     width: max-content;
     height: max-content;
 }
 
-.texto-devolucion{
+.texto-devolucion {
     grid-area: t-devolucion;
     display: flex;
     align-items: center;
@@ -240,14 +265,14 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
 
 }
 
-.img-garantia{
+.img-garantia {
     grid-area: img-garantia;
     display: flex;
     width: max-content;
     height: max-content;
 }
 
-.texto-garantia{
+.texto-garantia {
     grid-area: t-garantia;
     display: flex;
     align-items: center;
@@ -255,13 +280,14 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
     font-weight: bold;
 }
 
-.img-seguridad{
+.img-seguridad {
     grid-area: img-seguridad;
     display: flex;
     width: max-content;
     height: max-content;
 }
-.texto-seguridad{
+
+.texto-seguridad {
     grid-area: t-seguridad;
     display: flex;
     align-items: center;
@@ -269,7 +295,7 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
     font-weight: bold;
 }
 
-.titulo-medio-de-pago{
+.titulo-medio-de-pago {
     display: flex;
     grid-area: medio-de-pago;
     background-color: #f4f2f3;
@@ -279,31 +305,31 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
     height: 100%;
 }
 
-.titulo-medio-de-pago h2{
+.titulo-medio-de-pago h2 {
     width: 100%;
     margin: 0 auto;
 }
 
-.img-efectivo{
+.img-efectivo {
     grid-area: img-efectivo;
     width: max-content;
     height: max-content;
 }
 
-.img-transferencia{
+.img-transferencia {
     grid-area: img-transferencia;
     width: max-content;
     height: max-content;
 }
 
-.img-tarjetas{
+.img-tarjetas {
     grid-area: img-tarjetas;
     max-width: auto;
     width: max-content;
     height: max-content;
 }
 
-.img-criptomonedas{
+.img-criptomonedas {
     grid-area: img-cripto;
     max-width: auto;
     width: max-content;
@@ -313,56 +339,57 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
 
 
 
-.categorias ul{
+.categorias ul {
     width: 100%;
     align-self: center;
     justify-items: center;
 }
 
-.categorias li{
+.categorias li {
     justify-items: center;
 }
 
-.categorias li{
+.categorias li {
     list-style: none;
     text-decoration: none;
-   /*  margin-top: 17%;
+    /*  margin-top: 17%;
     margin-bottom: 17%; */
     background-color: aliceblue;
     width: 70%;
     border-radius: 20px;
     text-align: center;
-    
-    
-    
+
+
+
 }
 
-.categorias a{
+.categorias a {
     text-decoration: none;
-    color: black;    
+    color: black;
 }
 
-.listado{
-   align-content: space-between;
-   width: 100%;
-   margin-left: 0%;
-   padding-left: 0%;
-   background-color: #e5e027;
-   background-image: linear-gradient(90deg, #e5e027 38%, #bdb67f 100%);
+.listado {
+    align-content: space-between;
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 0%;
+    background-color: #e5e027;
+    background-image: linear-gradient(90deg, #e5e027 38%, #bdb67f 100%);
 }
 
-.listado li{
+.listado li {
     margin: 30px auto;
 }
-.grid-main > div p{
-    font-size: larger;   
+
+.grid-main>div p {
+    font-size: larger;
 }
 
-.img-tarjetas p{
+.img-tarjetas p {
     text-align: center;
 }
 
-.img-criptomonedas p{
+.img-criptomonedas p {
     text-align: center;
 }
 
@@ -371,20 +398,20 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
 
 /* FOOTER - FLEX */
 
-.footer{
+.footer {
     display: flex;
     background-color: rgb(39, 41, 37);
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.footer > div{
+.footer>div {
     display: inline-block;
     position: relative;
     text-align: center;
 }
 
-.texto-wpp{
+.texto-wpp {
     position: absolute;
     top: 25%;
     left: 37%;
@@ -393,16 +420,18 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
     font-weight: 600;
     font-size: 150%;
 }
-.img-wpp:hover{
+
+.img-wpp:hover {
     opacity: 15%;
 }
-.div-wpp:hover .texto-wpp{
+
+.div-wpp:hover .texto-wpp {
     display: block;
 }
 
 
 
-.texto-face{
+.texto-face {
     position: absolute;
     top: 25%;
     left: 37%;
@@ -412,14 +441,15 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
     font-size: 165%;
 }
 
-.img-face:hover{
+.img-face:hover {
     opacity: 15%;
 }
-.div-face:hover .texto-face{
+
+.div-face:hover .texto-face {
     display: block;
 }
 
-.texto-insta{
+.texto-insta {
     position: absolute;
     top: 25%;
     left: 37%;
@@ -428,21 +458,53 @@ background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
     font-weight: 600;
     font-size: 165%;
 }
-.img-insta:hover{
+
+.img-insta:hover {
     opacity: 15%;
 }
-.div-insta:hover .texto-insta{
+
+.div-insta:hover .texto-insta {
     display: block;
 }
 
-.footer img{
+.footer img {
     width: 32%;
 }
 
 .quienes,
-.preguntas{
+.preguntas {
     display: grid;
 }
 
-/* ESTILOS QUIENES SOMOS BOOT */
+/* ESTILOS PREGUNTAS FRECUENTES */
 
+.m-p {
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.img-cripto {
+    width: 50%;
+    margin-left: 30%;
+}
+
+@media (max-width: 992px) {
+
+
+    .grid-main-productos {
+        grid-template-columns: 1fr;
+        grid-template-areas: "productos"
+    }
+}
+
+.carrito{
+    background-image: url( ../Image/carrito.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    color: transparent;
+    border: none;
+    background-color: transparent;
+}
