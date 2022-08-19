@@ -1,11 +1,11 @@
 /* /* RESETEO */
-html,
+/* html,
 body {
     font-size: roboto, arial;
     background-color: #BDB67F;
     margin: 0px;
     padding: 0px;
-}
+} */
 
 @import url(responsive-480px.css);
 
@@ -40,15 +40,6 @@ body {
     box-sizing: border-box;
 }
 
-.navegador>div {
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
 
 h1 {
     margin: 10px;
@@ -66,7 +57,7 @@ h1 {
     align-items: center;
 }
 
-.titulo {
+/* .titulo {
     grid-area: titulo;
     align-items: center;
     background-color: #f8f32a;
@@ -76,20 +67,20 @@ h1 {
     color: rgb(244, 242, 243);
     height: 10%;
 
-}
+} */
 
-.menu {
+/* .menu {
     grid-area: menu;
     align-items: center;
     display: flex;
     justify-content: center;
-}
+} */
 
-.buscador {
+/* .buscador {
     grid-area: buscador;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 

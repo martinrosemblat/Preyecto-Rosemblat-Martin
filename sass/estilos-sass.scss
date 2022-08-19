@@ -1,0 +1,56 @@
+$amarillo:#f8f32a;
+
+body {
+    font-size: roboto, arial;
+    background-color: #BDB67F;
+    margin: 0px;
+    padding: 0px;
+
+    .navegador {
+        div {
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-content: center;
+            margin: 0 auto;
+
+        }
+
+        .buscador {
+            grid-area: buscador;
+            justify-content: center;
+            align-items: center;
+        }
+
+           }
+           .titulo {
+            grid-area: titulo;
+            align-items: center;
+            background-color:$amarillo;
+            background-image: linear-gradient(0deg, $amarillo 0%, #080600 100%);
+
+
+            color: rgb(244, 242, 243);
+            height: 10%;
+        }
+
+        .menu {
+            grid-area: menu;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+        }
+
+       
+ 
+
+
+
+}
