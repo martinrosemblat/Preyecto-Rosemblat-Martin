@@ -1,432 +1,426 @@
 $amarillo:#f8f32a;
-@maxin width-height{
+
+@mixin width-height {
     width: max-content;
     height: max-content;
 }
 
-@import url(responsive-480px.css);
+/* @import url(responsive-480px.css); */
 
 body {
     font-size: roboto, arial;
     background-color: #BDB67F;
-    margin: 0px;
+    margin: 30px;
     padding: 0px;
+}
 
-    .navegador {
+.navegador {
 
-        display: grid;
-        grid-template-areas: "titulo titulo titulo"
-            "logo menu buscador";
-        grid-template-columns: 2fr 6fr 2fr;
-        grid-template-rows: auto 80px;
-        background-color: #f8f32a;
-        background-image: linear-gradient(180deg, #f8f32a 43%, #bdb67f 100%);
-        
-
-        div {
-            justify-content: center;
-            display: flex;
-            width: 100%;
-            height: auto;
-            display: flex;
-            align-content: center;
-            margin: 0 auto;
-
-        }
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"
+        "logo menu buscador";
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: auto 80px;
+    background-color: #f8f32a;
+    background-image: linear-gradient(180deg, #f8f32a 43%, #bdb67f 100%);
 
 
-
-    }
-
-    .buscador {
-        grid-area: buscador;
+    div {
         justify-content: center;
-        align-items: center;
-    }
-
-    .titulo {
-        grid-area: titulo;
-        align-items: center;
-        background-color: $amarillo;
-        background-image: linear-gradient(0deg, $amarillo 0%, #080600 100%);
-
-
-        color: rgb(244, 242, 243);
-        height: 10%;
-    }
-
-    .menu {
-        grid-area: menu;
-        align-items: center;
         display: flex;
-        justify-content: center;
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .ul-li {
-
-
-            list-style: none;
-            width: 100%;
-            /*  padding: 0%; */
-            display: flex;
-
-            a {
-                text-decoration: none;
-                font-size: 20px;
-                font-weight: 600;
-                color: rgb(13, 19, 33);
-                justify-self: center;
-                width: 100%;
-
-            }
-
-            li {
-                width: 100%;
-                display: inline;
-            }
-        }
-
-    }
-
-    .logo {
-        grid-area: logo;
-        justify-items: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-
-
-    .grid-main {
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
-        grid-template-rows: minmax(auto, 100%);
-        grid-template-areas: "titulo elegirnos elegirnos"
-            "categorias elegirnos elegirnos"
-            "categorias img-envio-gratis t-envio-g"
-            "categorias img-devoluciones t-devolucion"
-            "categorias img-garantia t-garantia"
-            "categorias img-seguridad t-seguridad"
-            "medio-de-pago . ."
-            "medio-de-pago img-tarjetas img-cripto";
-
-        div {
-
-            margin: 0%;
-            padding: 0%;
-            width: 100%;
-
-
-            img {
-                width: 20%;
-                justify-self: center;
-                margin-left: 35%;
-            
-            }
-
-            p {
-                font-size: larger;
-            }
-        }
-
-
-
-    }
-
-    .img-envio {
-        max-width: 25%;
-
-    }
-
-
-
-
-    .titulo-categoria {
-        grid-area: titulo;
-        background-color: #F8F2CB;
-        text-align: center;
-        font-size: x-large;
-        display: inline-block;
-
-
-        border-radius: 0px;
-        background: #e0e0e0;
-        box-shadow: inset 29px 29px 59px #989898,
-            inset -29px -29px 59px #ffffff;
-    }
-
-
-    .categorias {
-        grid-area: categorias;
-        background-color: #BDB67F;
-        width: auto;
-        display: flex;
-        margin-top: 0%;
-        padding-top: 0%;
-
-        ul {
-            width: 100%;
-            align-self: center;
-            justify-items: center;
-        }
-
-        li {
-            list-style: none;
-            text-decoration: none;
-            /*  margin-top: 17%;
-            margin-bottom: 17%; */
-            background-color: aliceblue;
-            width: 70%;
-            border-radius: 20px;
-            text-align: center;
-            justify-items: center
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-    }
-
-    .porque-elegirnos {
-        grid-area: elegirnos;
-        text-align: center;
-        font-size: 50px;
-        color: black;
-        font: weight 900px;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        text-decoration: wavy;
-
-        p {
-            margin-top: 4%;
-            margin-bottom: 2%;
-        }
-    }
-
-    .img-envio-gratis {
-        grid-area: img-envio-gratis;
-        display: flex;
-        @include width-height
-        max-width: 100%
-    }
-
-    .texto-envios-gratis {
-        grid-area: t-envio-g;
-        display: flex;
-        align-items: center;
-        font-size: larger;
-        font-weight: bold;
-        @include width-height
-
-    }
-
-
-
-    .img-devolucion {
-        grid-area: img-devoluciones;
-        display: flex;
-        @include width-height
-    }
-
-    .texto-devolucion {
-        grid-area: t-devolucion;
-        display: flex;
-        align-items: center;
-        font-size: larger;
-        font-weight: bold;
-
-    }
-
-    .img-garantia {
-        grid-area: img-garantia;
-        display: flex;
-        @include width-height;
-    }
-
-    .texto-garantia {
-        grid-area: t-garantia;
-        display: flex;
-        align-items: center;
-        font-size: larger;
-        font-weight: bold;
-    }
-
-    .img-seguridad {
-        grid-area: img-seguridad;
-        display: flex;
-        @include width-height
-    }
-
-    .texto-seguridad {
-        grid-area: t-seguridad;
-        display: flex;
-        align-items: center;
-        font-size: larger;
-        font-weight: bold;
-    }
-
-    .titulo-medio-de-pago {
-        display: flex;
-        grid-area: medio-de-pago;
-        background-color: #f4f2f3;
-        background-image: linear-gradient(90deg, #f4f2f3 38%, #bdb67f 100%);
-        text-align: center;
-        align-items: center;
-        height: 100%;
-
-        h2 {
-            width: 100%;
-            margin: 0 auto;
-        }
-    }
-
-
-
-
-    .img-efectivo {
-        grid-area: img-efectivo;
-        @include width-height
-    }
-
-    .img-transferencia {
-        grid-area: img-transferencia;
-        @include width-height
-    }
-
-    .img-tarjetas {
-        grid-area: img-tarjetas;
-        max-width: auto;
-        @include width-height
-
-        p {
-            text-align: center;
-        }
-    }
-
-    .img-criptomonedas {
-        grid-area: img-cripto;
-        max-width: auto;
-        @include width-height
-
-        p {
-            text-align: center;
-        }
-    }
-
-    .listado {
-        align-content: space-between;
         width: 100%;
-        margin-left: 0%;
-        padding-left: 0%;
-        background-color: #e5e027;
-        background-image: linear-gradient(90deg, #e5e027 38%, #bdb67f 100%);
-
-        li {
-            margin: 30px auto;
-        }
+        height: auto;
+        display: flex;
+        align-content: center;
+        margin: 0 auto;
 
     }
+}
+
+.buscador {
+    grid-area: buscador;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    grid-area: titulo;
+    align-items: center;
+    background-color: $amarillo;
+    background-image: linear-gradient(0deg, $amarillo 0%, #080600 100%);
+    color: rgb(244, 242, 243);
+    height: 10%;
+}
+
+.menu {
+    grid-area: menu;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .ul-li {
 
 
-    .footer {
+        list-style: none;
+        width: 100%;
+        /*  padding: 0%; */
         display: flex;
-        background-color: rgb(39, 41, 37);
-        margin-top: 20px;
-        margin-bottom: 20px;
 
-        div {
-            display: inline-block;
-            position: relative;
-            text-align: center;
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(13, 19, 33);
+            justify-self: center;
+            width: 100%;
+
         }
+
+        li {
+            width: 100%;
+            display: inline;
+        }
+    }
+}
+
+.logo {
+    grid-area: logo;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-main{
+   div{
+        img{
+            >img:hover{
+                transform: scale(1.1);
+                transition: all 0,5s;
+        } 
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: minmax(auto, 100%);
+    grid-template-areas: "titulo elegirnos elegirnos"
+        "categorias elegirnos elegirnos"
+        "categorias img-envio-gratis t-envio-g"
+        "categorias img-devoluciones t-devolucion"
+        "categorias img-garantia t-garantia"
+        "categorias img-seguridad t-seguridad"
+        "medio-de-pago . ."
+        "medio-de-pago img-tarjetas img-cripto";
+
+    div {
+
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
 
         img {
-            width: 32%;
+            width: 20%;
+            justify-self: center;
+            margin-left: 35%;
+
+        }
+
+        p {
+            font-size: larger;
         }
     }
+}
 
-
-    .texto-wpp {
-        position: absolute;
-        top: 25%;
-        left: 37%;
-        display: none;
-        color: rgb(244, 242, 243);
-        font-weight: 600;
-        font-size: 150%;
-    }
-
-    .img-wpp:hover {
-        opacity: 15%;
-    }
-
-    .div-wpp:hover .texto-wpp {
-        display: block;
-    }
-
-
-
-    .texto-face {
-        position: absolute;
-        top: 25%;
-        left: 37%;
-        display: none;
-        color: rgb(244, 242, 243);
-        font-weight: 600;
-        font-size: 165%;
-    }
-
-    .img-face:hover {
-        opacity: 15%;
-    }
-
-    .div-face:hover .texto-face {
-        display: block;
-    }
-
-    .texto-insta {
-        position: absolute;
-        top: 25%;
-        left: 37%;
-        display: none;
-        color: rgb(244, 242, 243);
-        font-weight: 600;
-        font-size: 165%;
-    }
-
-    .img-insta:hover {
-        opacity: 15%;
-    }
-
-    .div-insta:hover .texto-insta {
-        display: block;
-    }
-
-    @import url(responsive-480px.css);
+.img-envio {
+    max-width: 25%;
 
 }
+
+
+.titulo-categoria {
+    grid-area: titulo;
+    background-color: #F8F2CB;
+    text-align: center;
+    font-size: x-large;
+    display: inline-block;
+
+
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow: inset 29px 29px 59px #989898,
+        inset -29px -29px 59px #ffffff;
+}
+
+
+.categorias {
+    grid-area: categorias;
+    background-color: #BDB67F;
+    width: auto;
+    display: flex;
+    margin-top: 0%;
+    padding-top: 0%;
+
+    ul {
+        width: 100%;
+        align-self: center;
+        justify-items: center;
+    }
+
+    li {
+        list-style: none;
+        text-decoration: none;
+        /*  margin-top: 17%;
+            margin-bottom: 17%; */
+        background-color: aliceblue;
+        width: 70%;
+        border-radius: 20px;
+        text-align: center;
+        justify-items: center
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+.porque-elegirnos {
+    grid-area: elegirnos;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font: weight 900px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: wavy;
+
+    p {
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+}
+
+.img-envio-gratis {
+    grid-area: img-envio-gratis;
+    display: flex;
+    @include width-height;
+    max-width: 100%
+}
+
+.texto-envios-gratis {
+    grid-area: t-envio-g;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+    @include width-height
+}
+
+
+
+.img-devolucion {
+    grid-area: img-devoluciones;
+    display: flex;
+    @include width-height
+}
+
+.texto-devolucion {
+    grid-area: t-devolucion;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+.img-garantia {
+    grid-area: img-garantia;
+    display: flex;
+    @include width-height;
+}
+
+.texto-garantia {
+    grid-area: t-garantia;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.img-seguridad {
+    grid-area: img-seguridad;
+    display: flex;
+    @include width-height
+}
+
+.texto-seguridad {
+    grid-area: t-seguridad;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.titulo-medio-de-pago {
+    display: flex;
+    grid-area: medio-de-pago;
+    background-color: #f4f2f3;
+    background-image: linear-gradient(90deg, #f4f2f3 38%, #bdb67f 100%);
+    text-align: center;
+    align-items: center;
+    height: 100%;
+
+    h2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+.img-efectivo {
+    grid-area: img-efectivo;
+    @include width-height
+}
+
+.img-transferencia {
+    grid-area: img-transferencia;
+    @include width-height
+}
+
+.img-tarjetas {
+    grid-area: img-tarjetas;
+    max-width: auto;
+    @include width-height;
+
+    p {
+        text-align: center;
+    }
+}
+
+.img-criptomonedas {
+    grid-area: img-cripto;
+    max-width: auto;
+    @include width-height;
+
+    p {
+        text-align: center;
+    }
+}
+
+.listado {
+    align-content: space-between;
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 0%;
+    background-color: #e5e027;
+    background-image: linear-gradient(90deg, #e5e027 38%, #bdb67f 100%);
+
+    li {
+        margin: 30px auto;
+    }
+
+}
+
+
+.footer {
+    display: flex;
+    background-color: rgb(39, 41, 37);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    div {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+    }
+
+    img {
+        width: 32%;
+    }
+}
+
+
+.texto-wpp {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    display: none;
+    color: rgb(244, 242, 243);
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.img-wpp:hover {
+    opacity: 15%;
+}
+
+.div-wpp:hover .texto-wpp {
+    display: block;
+}
+
+
+
+.texto-face {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    display: none;
+    color: rgb(244, 242, 243);
+    font-weight: 600;
+    font-size: 165%;
+}
+
+.img-face:hover {
+    opacity: 15%;
+}
+
+.div-face:hover .texto-face {
+    display: block;
+}
+
+.texto-insta {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    display: none;
+    color: rgb(244, 242, 243);
+    font-weight: 600;
+    font-size: 165%;
+}
+
+.img-insta:hover {
+    opacity: 15%;
+}
+
+.div-insta:hover .texto-insta {
+    display: block;
+}
+
+@import url(responsive-480px.css);
+
 
 .grid-main-productos {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: minmax(auto, 100%);
     grid-template-areas: "titulo productos"
-                "categorias productos"
-                "categorias productos"
-                "categorias productos"
-                
+        "categorias productos"
+        "categorias productos"
+        "categorias productos"
+
     ;
 }
-
+   }
 .productos-area {
     grid-area: productos;
 }
-
+}

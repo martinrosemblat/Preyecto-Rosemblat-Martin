@@ -1,0 +1,22 @@
+{
+  "name": "cls",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinrosemblat/Preyecto-Rosemblat-Martin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinrosemblat/Preyecto-Rosemblat-Martin/issues"
+  },
+  "homepage": "https://github.com/martinrosemblat/Preyecto-Rosemblat-Martin#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.54.9"
+  }
+}
