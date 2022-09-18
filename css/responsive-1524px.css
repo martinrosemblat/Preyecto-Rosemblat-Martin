@@ -1,16 +1,4 @@
-@media (max-width: 944px){
-
-.necesito{
-    width: 50%;
-    margin-left: 15%
-}
-
- .buscador-content{
-    display: flex;
-    justify-items: center;
-} 
-
-
+@media (max-width: 1524px){
 
 
 .menu a{
@@ -18,10 +6,9 @@
     font-weight: 600;
 }
 
-
 .porque-elegirnos{
 
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .titulo-categoria{
@@ -39,5 +26,8 @@
     font-size: 15px
 }
 
+
+
 }
 
+@import url(responsive-711px.css);
