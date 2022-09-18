@@ -427,7 +427,7 @@ h1 {
     left: 37%;
     display: none;
     color: rgb(244, 242, 243);
-    font-weight:800;
+    font-weight: 800;
     font-size: 100%;
 }
 
@@ -507,6 +507,7 @@ h1 {
 .necesito {
     align-self: center;
 }
+
 /* CARRITO DE COMPRAS SECCION PRODUCTOS */
 .carrito {
     background-image: url(../Image/carrito.png);
@@ -521,24 +522,20 @@ h1 {
 /* ---------MEDIA--------- */
 
 @media (max-width: 992px) {
-
-
     .grid-main-productos {
         grid-template-columns: 1fr;
         grid-template-areas: "productos"
     }
 
+    .listado{
+        display: none;
+    }    
     .texto-wpp,
     .texto-face,
-    .texto-insta{
+    .texto-insta {
         font-size: 75%
     }
-
 }
-
-
-
-
 
 @media (max-width: 944px) {
 
@@ -552,17 +549,11 @@ h1 {
         justify-items: center;
     }
 
-
-
-
     .menu a {
         font-size: 15px;
-
     }
 
-
     .porque-elegirnos {
-
         font-size: 30px;
     }
 
@@ -583,9 +574,6 @@ h1 {
 
 }
 
-
-
-
 @media (max-width: 800px) {
     .necesito {
         display: none;
@@ -604,16 +592,15 @@ h1 {
         display: none;
     }
 
-   div > h1{
-    display: none;
-   }
+    div>h1 {
+        display: none;
+    }
 
-   
-   .texto-wpp,
-   .texto-face,
-   .texto-insta{
-       font-size: 57%
-   }
+    .texto-wpp,
+    .texto-face,
+    .texto-insta {
+        font-size: 57%
+    }
 }
 
 
@@ -647,10 +634,6 @@ h1 {
 
 
     }
-
-    /*   .titulo-medio-de-pago{
-            display: none;
-        } */
 
     .necesito {
         display: none;
@@ -687,10 +670,10 @@ h1 {
         font-size: small;
     }
 
-    
+
     .texto-wpp,
     .texto-face,
-    .texto-insta{
+    .texto-insta {
         font-size: 40%
     }
 }
