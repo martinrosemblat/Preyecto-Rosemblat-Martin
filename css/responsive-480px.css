@@ -1,5 +1,5 @@
 
-@media (max-width: 480px){
+@media (max-width: 650px){
 
 
     .quienes,
@@ -11,17 +11,38 @@
         height: 0%;
     }
     
+    .logo{
+        display: none;
+    }
+
+    .grid-main {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: minmax(auto, 100%);
+        grid-template-areas: "elegirnos elegirnos"
+            "img-envio-gratis t-envio-g"
+            "img-devoluciones t-devolucion"
+            "img-garantia t-garantia"
+            "img-seguridad t-seguridad"
+            "medio-de-pago medio-de-pago"
+            "img-cripto img-tarjetas";
+    
+    
+    }
+
+  /*   .titulo-medio-de-pago{
+        display: none;
+    } */
+    
     .necesito{
-        width: 80%;
+        display: none;
     }
     
     .productos{
         padding-left: 15px;
     }
     .img-envio{
-        width: 30%;
-        height: 60%;
-        text-align: center;
+       display: none;
     }
     
     .titulo-categoria,
@@ -49,7 +70,6 @@
     
     }
 
-    @import url(responsive-1716px.css);
 
 
 

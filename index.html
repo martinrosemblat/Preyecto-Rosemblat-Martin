@@ -5,35 +5,62 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="busca, compra, encontra">
+	<meta name="description" content="Encontra en nuestra pagina, todos los productos que hacen a tu felicidad">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/estilos2.css">
 	<link rel="stylesheet" href="css/responsive-480px.css">
 	<link rel="stylesheet" href="css/responsive-1524px.css">
 	<link rel="stylesheet" href="css/responsive-711px.css">
 
+
 	<title>Lleva y Trae</title>
 
 </head>
-<div>
 
+<div>
 	<body>
 
 		<nav class="navegador">
 			<div class="logo">
-				<img src="image/envio.png" alt="envio" class="img-envio">
+				<a href="index.html" class="logo"><img src="image/envio.png" alt="envio" title="envio" class="img-envio"></a> 
 			</div>
 
 			<div class="titulo">
 				<h1>Lleva y Trae</h1>
 			</div>
 
-			<div class="menu">
-				<ul class="ul-li">
-					<li id="home"><a href="index.html">Inicio </a></li>
-					<li><a href="secciones/productos.html" class="productos">Productos</a></li>
-					<li class="li-quienes"><a  class="quienes" href="secciones/quienes-somos.html">Quienes somos</a></li>
-					<li class="li-contacto"><a href="secciones/contacto.html">Contacto</a></li>
-					<li class="li-preguntas"><a href="secciones/preguntas-frecuentes.html" class="preguntas">Preguntas Frecuentes</a></li>
-				</ul>
+			<div class="menu d-flex align-items-center">
+				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+
+					<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+					<label class="btn btn-outline-dark" for="btnradio1">
+						<a href="index.html" class="text-decoration-none text-reset">Inicio </a>
+					</label>
+
+					<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+					<label class="btn btn-outline-dark" for="btnradio2">
+						<a href="secciones/productos.html" class="text-decoration-none text-reset">Productos </a>
+					</label>
+
+					<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+					<label class="btn btn-outline-dark" for="btnradio3">
+						<a href="secciones/quienes-somos.html" class="text-decoration-none text-reset">Quienes Somos
+						</a>
+					</label>
+
+					<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+					<label class="btn btn-outline-dark" for="btnradio3">
+						<a href="secciones/contacto.html" class="text-decoration-none text-reset">Contacto </a>
+					</label>
+
+					<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+					<label class="btn btn-outline-dark" for="btnradio3">
+						<a href="secciones/preguntas-frecuentes.html" class="text-decoration-none text-reset">Preguntas
+							Frecuentes</a>
+					</label>
+				</div>
 			</div>
 
 			<div class="buscador">
@@ -47,30 +74,32 @@
 
 
 			<div class="titulo-categoria">
-				<h2> <p> Categorias </p></h2>
+				<h2>
+					<p> Categorias </p>
+				</h2>
 			</div>
 
 			<div class="categorias">
 				<ul class="listado">
-					<li><a href="#"> Tecnologia</a></li>
-					<li><a href="#"> Moda </a></li>
-					<li><a href="#">Deco Hogar</a></li>
-					<li><a href="#"> Electrodomesticos</a></li>
-					<li><a href="#"> Herramientas </a></li>
-					<li><a href="#"> Deportes y Fitness</a></li>
-					<li><a href="#"> Suplementos dietarios</a></li>
-					<li><a href="#">PetShop</a></li>
-					<li><a href="#"> Novedades</a></li>
-					<li><a href="#"> Mas Vendidos </a></li>
+					<li><a href="secciones/productos.html"> Tecnologia</a></li>
+					<li><a href="secciones/productos.html"> Moda </a></li>
+					<li><a href="secciones/productos.html"> Deco Hogar</a></li>
+					<li><a href="secciones/productos.html"> Electrodomesticos</a></li>
+					<li><a href="secciones/productos.html"> Herramientas </a></li>
+					<li><a href="secciones/productos.html"> Deportes y Fitness</a></li>
+					<li><a href="secciones/productos.html"> Suplementos dietarios</a></li>
+					<li><a href="secciones/productos.html"> PetShop</a></li>
+					<li><a href="secciones/productos.html"> Novedades</a></li>
+					<li><a href="secciones/productos.html"> Mas Vendidos </a></li>
 				</ul>
 			</div>
 
 			<div class="porque-elegirnos">
-				<p class="porque">¿Porque elegirnos?</p>
+			 <span class="porque">¿Porque elegirnos?</span>	
 			</div>
 
 			<div class="img-envio-gratis">
-				<img src="Image/envio-gratis.png" alt="envio-gratis">
+				<img src="image/envio-gratis.png" title="envio-gratis" alt="envio-gratis">
 			</div>
 
 			<div class="texto-envios-gratis">
@@ -81,7 +110,7 @@
 			</div>
 
 			<div class="img-devolucion">
-				<img src="image/devolucion.png" alt="devolucion">
+				<img src="image/devolucion.png" title="devolucion" alt="devolucion">
 			</div>
 
 			<div class="texto-devolucion">
@@ -91,7 +120,7 @@
 			</div>
 
 			<div class="img-garantia">
-				<img src="image/garantia.png" alt="garantia">
+				<img src="image/garantia.png" title="garantia" alt="garantia">
 			</div>
 
 			<div class="texto-garantia">
@@ -101,7 +130,7 @@
 			</div>
 
 			<div class="img-seguridad">
-				<img src="image/seguridad.png" alt="seguridad">
+				<img src="image/seguridad.png" title="seguridad" alt="seguridad">
 			</div>
 
 			<div class="texto-seguridad">
@@ -112,46 +141,32 @@
 
 			<div class="titulo-medio-de-pago">
 				<h2>Medios de pago</h2>
-			</div> 
-
-			<!-- <div class="img-efectivo">
-				<img src="image/efectivo.png" alt="efectivo" />
 			</div>
 
-			<div class="img-transferencia">
-				<img src="image/transferencia-bancaria.png" alt="transferencia" />
-			</div> -->
-
 			<div class="img-tarjetas">
-				<div>
-					<p><br></p>
-				</div>
-				<img src="image/tarjetas-de-credito.png" alt="tarjetas">
+
+				<img src="image/tarjetas-de-credito.png" title="tarjetas" alt="tarjetas">
 				<p> Trabajamos con todas las tarjetas</p>
 			</div>
 
 			<div class="img-criptomonedas">
-				<div>
-					<p><br></p>
-				</div>
-				<img src="image/criptomoneda.png" alt="criptomonedas">
+				<img src="image/criptomoneda.png" title="criptomonedas" alt="criptomonedas">
 				<p>Aceptamos BTC, ETH y stable-coins</p>
 			</div>
-
 		</main>
 
-		<footer class="footer">
+		<footer class="footer mt-5 justify-content-center">
 			<div class="div-wpp">
 				<p class="texto-wpp">291-12345678</p>
-				<img src="image/whatsapp.png" alt="whatsapp" class="img-wpp">
+				<img src="image/whatsapp.png" alt="whatsapp" title="img-wpp" class="img-wpp">
 			</div>
 			<div class="div-face">
 				<p class="texto-face">/Llevaytrae</p>
-				<img src="image/facebook.png" alt="facebook" class="img-face">
+				<img src="image/facebook.png" alt="facebook" title="img-face" class="img-face">
 			</div>
 			<div class="div-insta">
-				<p class="texto-insta">/Llevaytrae</p> 
-				<img src="image/instagram.png" alt="instagram" class="img-insta">
+				<p class="texto-insta">/Llevaytrae</p>
+				<img src="image/instagram.png" alt="instagram" title="img-insta" class="img-insta">
 			</div>
 		</footer>
 	</body>

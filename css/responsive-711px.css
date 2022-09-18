@@ -1,10 +1,15 @@
-@media (max-width: 711px){
-
+@media (max-width: 800px){
+.necesito{
+    display: none;
+}
     .porque-elegirnos{
         font-size: 20px;
         font-weight: 600;
     }
 
+    .img-envio{
+        display: none;
+     }
 
     .buscador{
         display: none;
