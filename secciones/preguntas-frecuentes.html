@@ -1,58 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../css/estilos.css">
-		<title>Lleva y trae</title>
-	</head>
-	<body>
-		<h1>Preguntas Frecuentes</h1>
-		<nav class="contenedor">
-			<img src="../Image/envio.png" alt="envio">
-			<ul class="menu">
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="productos.html">Productos</a></li>
-				<li><a href="quienes-somos.html">Quienes somos</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li id="preguntas-frecuentes"><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-			</ul>
-			<label class="buscador">
-				<input type="search" placeholder="Necesito..."></imput>
-			</label>
-		</nav>
 
-		<h2>¿Todos los productos cuentan con garantia?</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium numquam asperiores, omnis consequuntur distinctio perferendis earum culpa hic error ratione eum deserunt non debitis qui quisquam cum temporibus pariatur.</p>
-		<h2>Contrata garantia +Plus duarente 1 año</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem adipisci odio atque reiciendis iusto, natus eos eligendi tenetur dolores sed sapiente, sunt aspernatur optio beatae ducimus qui quos enim. Quidem.</p>
-		<h2>Si mi pedido no llego ¿Que hago?</h2>
-		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, quia! Maiores facilis delectus facere eum, placeat cupiditate velit magni, culpa odio provident in perferendis sequi fugiat consectetur laudantium. Minus, soluta.</p>
-		<h2>¿Cuanto tiempo debo esperar antes de iniciar el reclamo?</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit beatae quisquam reprehenderit fugiat atque fuga voluptatem iure unde, explicabo cumque libero nulla nemo facilis, delectus ratione! Qui dolore sint neque?</p>
-		<h2>¿Ya esta disponible la opcion de pago con Criptomonedas?</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quaerat hic pariatur! Hic, excepturi labore nemo dolore esse ad saepe fugit at magnam. Eos ex, vero ipsam non officia tempora!</p>
-		<h2>Te gustaria sumarte al equipo de <b>LLeva y Trae</b>?</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat voluptatibus aperiam facere tempora! Provident, nemo officiis. Enim tempore placeat natus odio perspiciatis suscipit aliquid. Ex est libero esse natus?</p>
-		<footer>
-			<h2><b>Navegación</b></h2>
-			<ul>
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="productos.html">Productos</a></li>
-				<li><a href="quienes-somos.html">Quienes somos</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-			</ul>
-				<h2><b>Medios de pago</b></h2>
-				<img src="../image/img-formasdepago.png" alt="formas de pago"/>
-				<h2><b>Contactanos</b></h2>
-				<ul>
-					<li>+54-0291-12345678</li>
-					<li>LlevayTrae@gmail.com</li>
-					<li>Facebook: /Llevaytrae</li>
-					<li>Instagram: /Llevaytrae</li>
-				</ul>
-		</footer>	
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="conocenos, preguntas, frecuentes">
+	<meta name="description" content="Encontra en nuestra pagina, todos los productos que hacen a tu felicidad">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/estilos-sass.css">
+	<title>Lleva y trae</title>
+</head>
+
+<body>
+	<nav class="navegador">
+		<div class="logo mx-auto d-block text-center d-none d-sm-none d-md-block">
+			<h1 class="fs-5 p-0 m-0 small fw-light">Preguntas Frecuentes</h1>
+			<a href="../index.html"><img src="../image/envio.png" title="envio" alt="envio" class="img-envio"></a>
+		</div>
+
+		<div class="titulo">
+			<h2>Lleva y Trae</h2>
+		</div>
+
+		<div class="menu d-flex align-items-center">
+			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+				<label class="btn btn-outline-dark" for="btnradio1">
+					<a href="../index.html" class="text-decoration-none text-reset">Inicio </a>
+				</label>
+
+				<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+				<label class="btn btn-outline-dark" for="btnradio2">
+					<a href="productos.html" class="text-decoration-none text-reset">Productos </a>
+				</label>
+
+				<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+				<label class="btn btn-outline-dark" for="btnradio3">
+					<a href="quienes-somos.html" class="text-decoration-none text-reset">Quienes Somos </a>
+				</label>
+
+				<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+				<label class="btn btn-outline-dark" for="btnradio3">
+					<a href="contacto.html" class="text-decoration-none text-reset">Contacto </a>
+				</label>
+
+				<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
+				<label class="btn btn-outline-dark" for="btnradio3">
+					<a href="preguntas-frecuentes.html" class="text-decoration-none text-reset">Preguntas Frecuentes</a>
+				</label>
+
+
+			</div>
+
+		</div>
+
+		<div class="buscador d-none d-sm-none d-md-block">
+			<label class="buscador-content">
+				<input type="search" placeholder="Necesito..." class="necesito mt-3"></imput>
+			</label>
+		</div>
+	</nav>
+
+
+
+	<div class="container">
+		<div class="row mt-3">
+
+			<div class="mt-3 mb-2 col-12 col-md-6 col-lg-12">
+				<h2 class="fw-bold text-center mt-1"><ins>¿Todos los productos cuentan con garantia?</ins></h2>
+
+				<p class="m-p">La respuesta es si. Absolutamente todos los productos que vas a encontrar en nuestra
+					pagina,
+					cuentan con una garantia oficial brindada por los mismos productores, debido a que es un requisito
+					escencial para que cualquier emprendedor pueda vender en nuestro sitio.
+			</div>
+
+
+
+			<div class="mt-3 mb-2 col-12 col-md-6 col-lg-4">
+				<h2 class="fw-bold text-center mb-4"><ins>Contrata garantia +Plus duarente 1 año</ins> </h2>
+				<p class="m-p">
+					Con esta poliza, te aseguras tener 1 año mas de garantia, que se suma a la ya brindada por los
+					productores previamente.
+					Consulta nuestras mediante la pagina de <a href="/secciones/contacto.html"
+						class="text-decoration-none text-reset"><b><i>Contacto</i></b></a>
+			</div>
+
+
+			<div class="mt-3 mb-2 col-12 col-lg-4">
+				<h2 class="fw-bold text-center mb-4"><ins>Si mi pedido no llego ¿Que hago?</ins> </h2>
+
+				<p class="m-p">Podras seguir a cada momento el Muv-tracker de tu pedido. En caso de que el envio haya
+					tardado mas de 24hs de las estimadas,
+					recomendamos iniciar el reclamo mediante nuestra pagina de <a href="/secciones/contacto.html"
+						class="text-decoration-none text-reset"><b><i>Contacto</i></b></a>
+
+			</div>
+
+
+			<div class="mt-3 mb-2 col-12 col-md-6 col-lg-4">
+				<h2 class="fw-bold text-center mb-4"><ins>¿Como iniciar un reclamo?</ins> </h2>
+
+
+				<p class="m-p">
+					A traves de la pagina de Contacto, podras iniciar tu reclamo, en el cual deberas especificar, el motivo del mismo,
+					y deberas ingresar tu codigo de seguimiento. De esta manera podremos darte una informacion mas rapida y exacta sobre la localizacion
+					de tu pedido.
+			</div>
+
+
+
+			<div class="mt-3 mb-2 col-12 col-md-6 col-lg-6">
+				<h2 class="fw-bold text-center mb-4"><ins>¿Ya esta disponible la opcion de pago con Criptomonedas?</ins>
+				</h2>
+
+
+				<p class="m-p">Si! A partir de comienzos de este año, ya esta habilitada la opcion de pago mediante Criptos. Cada vendedor
+					tiene la libertad de elegir que Criptomonedas aceptar en su comercio ademas de las StableCoins.
+
+			</div>
+
+
+			<div class="mt-3 mb-2 d-none d-sm-none d-md-none d-lg-flex col-lg-6 div-img-cripto">
+				<img class="img-cripto" src="../image/criptomoneda.png" title="criptomonedas" alt="criptomonedas">
+
+			</div>
+
+
+
+			<div class="mt-3 mb-2 col-12">
+				<h2 class="fw-bold text-center">¿Te gustaria sumarte al equipo de <b>LLeva y Trae</b>?</h2>
+				<p class="m-p">Si estas interesado en saber mas sobre nosotros, o quizieras formar parte de nuestro equipo, dejanos saberlo, dejando 
+					un mensaje la pagina de Contacto. Via E-Mail, hacenos llegar tu CV actualizado.
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="footer justify-content-center">
+		<div class="div-wpp">
+			<p class="texto-wpp">291-12345678</p>
+			<img src="../image/whatsapp.png" title="whatsapp" alt="whatsapp" class="img-wpp">
+		</div>
+		<div class="div-face">
+			<p class="texto-face">/Llevaytrae</p>
+			<img src="../image/facebook.png" title="facebook" alt="facebook" class="img-face">
+		</div>
+		<div class="div-insta">
+			<p class="texto-insta">/Llevaytrae</p>
+			<img src="../image/instagram.png" title="instagram" alt="instagram" class="img-insta">
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+	</script>
+</body>
+
 </html>

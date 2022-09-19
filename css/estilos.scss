@@ -1,0 +1,631 @@
+/* /* RESETEO */
+html,
+body {
+    font-size: roboto, arial;
+    background-color: #BDB67F;
+    margin: 0px;
+
+
+
+    /* BARRA DE NAVEGACION */
+    .navegador {
+        display: grid;
+        grid-template-areas: "titulo titulo titulo"
+            "logo menu buscador";
+        grid-template-columns: 2fr 6fr 2fr;
+        grid-template-rows: auto 80px;
+        background-color: #f8f32a;
+        background-image: linear-gradient(180deg, #f8f32a 43%, #bdb67f 100%);
+    }
+
+
+    .navegador>div {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin: 10px;
+        font-size: medium;
+    }
+
+    /* IDENTIFICACION GRID-AREA DIVS */
+    .logo {
+        grid-area: logo;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo {
+        grid-area: titulo;
+        align-items: center;
+        background-color: #f8f32a;
+        background-image: linear-gradient(0deg, #f8f32a 0%, #080600 100%);
+        color: rgb(244, 242, 243);
+        height: 10%;
+    }
+
+    .menu {
+        grid-area: menu;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .buscador {
+        grid-area: buscador;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* AJUSTE IMAGEN LOGO */
+    .img-envio {
+        max-width: 25%;
+    }
+
+    /* CONFIGURACION INTERNA NAVEGADOR */
+    .ul>li {
+        display: flex;
+    }
+
+    .ul-li a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(13, 19, 33);
+        justify-self: center;
+        width: 100%;
+    }
+
+    .ul-li {
+        list-style: none;
+        width: 100%;
+        display: flex;
+    }
+
+    .ul-li li {
+        width: 100%;
+        display: inline;
+    }
+
+    /* GRID SECCION INTERNA */
+    .grid-main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: minmax(auto, 100%);
+        grid-template-areas:
+            "titulo elegirnos elegirnos"
+            "categorias elegirnos elegirnos"
+            "categorias img-envio-gratis t-envio-g"
+            "categorias img-devoluciones t-devolucion"
+            "categorias img-garantia t-garantia"
+            "categorias img-seguridad t-seguridad"
+            "medio-de-pago img-cripto img-tarjetas"
+            "medio-de-pago img-cripto img-tarjetas";
+    }
+
+    .grid-main-productos {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: minmax(20px, 100%);
+        grid-template-areas:
+            "titulo productos"
+            "categorias productos"
+            "categorias productos"
+            "categorias productos"
+    }
+
+    .grid-main div {
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+
+    }
+
+    .grid-main div>p {
+        margin-right: 20%;
+    }
+
+    .grid-main div>img {
+        width: 20%;
+        justify-self: center;
+        margin-left: 35%;
+    }
+
+    .grid-main div>img:hover {
+        transform: scale(1.1);
+        transition: all 0, 5s;
+    }
+
+    .productos-area {
+        grid-area: productos;
+    }
+
+    .titulo-categoria {
+        grid-area: titulo;
+        background-color: #F8F2CB;
+        text-align: center;
+        font-size: x-large;
+        display: inline-block;
+        border-radius: 0px;
+        background: #e0e0e0;
+        box-shadow: inset 29px 29px 59px #989898,
+            inset -29px -29px 59px #ffffff;
+    }
+
+    .categorias {
+        grid-area: categorias;
+        background-color: #BDB67F;
+        width: auto;
+        display: flex;
+        margin-top: 0%;
+        padding-top: 0%;
+
+    }
+
+
+    .porque-elegirnos {
+        grid-area: elegirnos;
+        justify-content: center;
+        text-align: center;
+        font-size: 35px;
+        color: black;
+        font: weight 900px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-decoration: wavy;
+    }
+
+    .porque-elegirnos p {
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+
+    .img-envio-gratis {
+        grid-area: img-envio-gratis;
+        display: flex;
+        width: max-content;
+        height: max-content;
+    }
+
+    .texto-envios-gratis {
+        grid-area: t-envio-g;
+        display: flex;
+        align-items: center;
+        font-size: larger;
+        font-weight: bold;
+        width: max-content;
+        height: max-content;
+    }
+
+    .img-devolucion {
+        grid-area: img-devoluciones;
+        display: flex;
+        width: max-content;
+        height: max-content;
+    }
+
+    .texto-devolucion {
+        grid-area: t-devolucion;
+        display: flex;
+        align-items: center;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .img-garantia {
+        grid-area: img-garantia;
+        display: flex;
+        width: max-content;
+        height: max-content;
+    }
+
+    .texto-garantia {
+        grid-area: t-garantia;
+        display: flex;
+        align-items: center;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .img-seguridad {
+        grid-area: img-seguridad;
+        display: flex;
+        width: max-content;
+        height: max-content;
+    }
+
+    .texto-seguridad {
+        grid-area: t-seguridad;
+        display: flex;
+        align-items: center;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .titulo-medio-de-pago {
+        display: flex;
+        grid-area: medio-de-pago;
+        background-color: #f4f2f3;
+        background-image: linear-gradient(90deg, #f4f2f3 38%, #bdb67f 100%);
+        text-align: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .titulo-medio-de-pago h2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .img-efectivo {
+        grid-area: img-efectivo;
+        width: max-content;
+        height: max-content;
+    }
+
+    .img-transferencia {
+        grid-area: img-transferencia;
+        width: max-content;
+        height: max-content;
+    }
+
+    .img-tarjetas {
+        grid-area: img-tarjetas;
+        max-width: auto;
+        width: max-content;
+        height: max-content;
+    }
+
+    .img-criptomonedas {
+        grid-area: img-cripto;
+        max-width: auto;
+        width: max-content;
+        height: max-content;
+    }
+
+    .categorias ul {
+        width: 100%;
+        align-self: center;
+        justify-items: center;
+    }
+
+    .categorias li {
+        justify-items: center;
+    }
+
+    .categorias li {
+        list-style: none;
+        text-decoration: none;
+        background-color: aliceblue;
+        width: 70%;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .categorias a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .listado {
+        width: 100%;
+        height: 100%;
+        margin-left: 0%;
+        padding-left: 0%;
+        background-color: #e5e027;
+        background-image: linear-gradient(90deg, #e5e027 38%, #bdb67f 100%);
+    }
+
+    .listado li {
+        margin: 30px auto;
+    }
+
+    .grid-main>div p {
+        font-size: larger;
+    }
+
+    .img-tarjetas p {
+        text-align: center;
+    }
+
+    .img-criptomonedas p {
+        text-align: center;
+    }
+
+    /* FOOTER - FLEX */
+    .footer {
+        display: flex;
+        background-color: rgb(39, 41, 37);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer>div {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+    }
+
+    /* ------------------------------ */
+    .texto-wpp {
+        position: absolute;
+        top: 40%;
+        left: 37%;
+        display: none;
+        color: rgb(244, 242, 243);
+        font-weight: 800;
+        font-size: 100%;
+    }
+
+    .img-wpp:hover {
+        opacity: 15%;
+    }
+
+    .div-wpp:hover .texto-wpp {
+        display: block;
+    }
+
+
+    /* --------------------------- */
+    .texto-face {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        display: none;
+        color: rgb(244, 242, 243);
+        font-weight: 800;
+        font-size: 100%;
+    }
+
+    .img-face:hover {
+        opacity: 15%;
+    }
+
+    .div-face:hover .texto-face {
+        display: block;
+    }
+
+    /* --------------------------------- */
+    .texto-insta {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        display: none;
+        color: rgb(244, 242, 243);
+        font-weight: 800;
+        font-size: 100%;
+    }
+
+    .img-insta:hover {
+        opacity: 15%;
+    }
+
+    .div-insta:hover .texto-insta {
+        display: block;
+    }
+
+    /* ------------------------------------- */
+
+    .footer img {
+        width: 32%;
+        margin: 5%
+    }
+
+    .quienes,
+    .preguntas {
+        display: grid;
+    }
+
+    /* ESTILOS PREGUNTAS FRECUENTES */
+    .m-p {
+        padding-left: 7%;
+        padding-right: 7%;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .img-cripto {
+        width: 50%;
+        margin-left: 30%;
+    }
+
+    .necesito {
+        align-self: center;
+    }
+
+    /* CARRITO DE COMPRAS SECCION PRODUCTOS */
+    .carrito {
+        background-image: url(../Image/carrito.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        color: transparent;
+        border: none;
+        background-color: transparent;
+    }
+
+    /* ---------MEDIA--------- */
+
+    @media (max-width: 992px) {
+
+        .grid-main {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: minmax(auto, 100%);
+            grid-template-areas: "elegirnos elegirnos"
+                "img-envio-gratis t-envio-g"
+                "img-devoluciones t-devolucion"
+                "img-garantia t-garantia"
+                "img-seguridad t-seguridad"
+                "medio-de-pago medio-de-pago"
+                "img-cripto img-tarjetas";
+
+
+        }
+
+        .grid-main-productos {
+            grid-template-columns: 1fr;
+            grid-template-areas: "productos"
+        }
+
+        .texto-wpp,
+        .texto-face,
+        .texto-insta {
+            font-size: 75%
+        }
+
+        .categorias,
+        .titulo-categoria {
+            display: none;
+        }
+
+    }
+
+
+
+
+
+    @media (max-width: 944px) {
+
+        .necesito {
+            width: 50%;
+            margin-left: 15%
+        }
+
+        .buscador-content {
+            display: flex;
+            justify-items: center;
+        }
+
+        .menu a {
+            font-size: 15px;
+        }
+
+
+        .porque-elegirnos {
+
+            font-size: 30px;
+        }
+
+        .titulo-categoria {
+            font-size: large;
+            display: none;
+
+        }
+
+
+
+        .listado {
+            font-size: 12px
+        }
+
+        .texto-envios-gratis,
+        .texto-devolucion,
+        .texto-garantia,
+        .texto-seguridad {
+            font-size: 15px
+        }
+
+    }
+
+
+
+
+    @media (max-width: 800px) {
+        .necesito {
+            display: none;
+        }
+
+        .porque-elegirnos {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .img-envio {
+            display: none;
+        }
+
+        .buscador {
+            display: none;
+        }
+
+        div>h1 {
+            display: none;
+        }
+
+
+        .texto-wpp,
+        .texto-face,
+        .texto-insta {
+            font-size: 57%
+        }
+    }
+
+
+    @media (max-width: 650px) {
+
+
+        .quienes,
+        .preguntas,
+        .li-quienes,
+        .li-preguntas {
+            display: none;
+            width: 0%;
+            height: 0%;
+        }
+
+        .logo {
+            display: none;
+        }
+
+        .necesito {
+            display: none;
+        }
+
+        .productos {
+            padding-left: 15px;
+        }
+
+        .img-envio {
+            display: none;
+        }
+
+        .titulo-categoria,
+        .categorias {
+            display: none;
+        }
+
+        .grid-main {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .grid-main>div p {
+            font-size: medium;
+            font-weight: 700;
+            width: 100%;
+        }
+
+        .grid-main>div {
+            align-items: center;
+        }
+
+        .porque-elegirnos {
+            font-size: small;
+        }
+
+
+        .texto-wpp,
+        .texto-face,
+        .texto-insta{
+            font-size: 40%;
+        }
+    }
+}
